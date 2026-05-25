@@ -202,7 +202,7 @@ class Core
      */
     public static function getGoogleFonts()
     {
-        $response = Http::get('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDQCZFgODu0jw7Ez00jgQU04SUsuncY3yQ');
+        $response = Http::get('https://www.googleapis.com/webfonts/v1/webfonts?key=' . config('services.google.key'));
         if($response->successful()) {
 
         }
